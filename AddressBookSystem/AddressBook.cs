@@ -44,7 +44,7 @@ namespace AddressBookSystem
         {
 
             ContactArray[this.i] = new AddressBook(firstName, lastName, Address, city, state, zip, phoneNumber, email);
-            Console.WriteLine("\tFirst name: {0}\tLast name: {1}\nAddress: {2}\nCity: {3}\nZip: {4}\nState: {5}\nPhone Number: {6}\nEmail: {7} \n", ContactArray[i].firstName, ContactArray[i].lastName, ContactArray[i].Address, ContactArray[i].city, ContactArray[i].zip, ContactArray[i].state, ContactArray[i].phoneNumber, ContactArray[i].email);
+            Console.WriteLine("\nFirst name: {0}\nLast name: {1}\nAddress: {2}\nCity: {3}\nZip: {4}\nState: {5}\nPhone Number: {6}\nEmail: {7} \n", ContactArray[i].firstName, ContactArray[i].lastName, ContactArray[i].Address, ContactArray[i].city, ContactArray[i].zip, ContactArray[i].state, ContactArray[i].phoneNumber, ContactArray[i].email);
         }
     }
 }
