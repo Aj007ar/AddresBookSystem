@@ -6,45 +6,57 @@ using System.Threading.Tasks;
 
 namespace AddressBookSystem
 {
-    internal class AddressBook
+    public class AddressBook
     {
-        //instance variables 
-        public string firstName;
-        public string lastName;
-        public string Address;
-        public string city;
-        public string state;
-        public int zip;
-        public long phoneNumber;
-        public string email;
-        public AddressBook[] ContactArray;
-        int i = 0;
 
-        //Parameterised Constructor
-        public AddressBook(string firstName, string lastName, string Address, string city, string state, int zip, long phoneNumber, string email)
+        public static List<NewContact> contactList = new List<NewContact>();
+        public void Addressbook()
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.Address = Address;
-            this.city = city;
-            this.state = state;
-            this.zip = zip;
-            this.phoneNumber = phoneNumber;
-            this.email = email;
-
+            NewContact newMember = new NewContact();
+            Console.Write("Enter First Name: ");
+            newMember.firstname = Console.ReadLine();
+            Console.Write("Enter Last Name: ");
+            newMember.lastname = Console.ReadLine();
+            Console.Write("Enter Phone Number: ");
+            newMember.phonenumber = Console.ReadLine();
+            Console.Write("Enter Address: ");
+            newMember.Address = Console.ReadLine();
+            Console.Write("Enter City: ");
+            newMember.City = Console.ReadLine();
+            Console.Write("Enter State: ");
+            newMember.State = Console.ReadLine();
+            Console.Write("Enter Pincode: ");
+            newMember.pincode = Console.ReadLine();
+            contactList.Add(newMember);
         }
-        //Default Contructor
-        public AddressBook()
+        public static void DisplyContact(NewContact member)
         {
-            this.ContactArray = new AddressBook[10];
+            Console.WriteLine("First Name: " + member.firstname);
+            Console.WriteLine("Last Name: " + member.lastname);
+            Console.WriteLine("Phone Number: " + member.phonenumber);
+            Console.WriteLine("Address" + member.Address);
+            Console.WriteLine("City: " + member.City);
+            Console.WriteLine("State: " + member.State);
+            Console.WriteLine("Pincode: " + member.pincode);
+            Console.WriteLine("");
         }
-
-        //To add Contact to Address Book
-        public void CreateContact(string firstName, string lastName, string Address, string city, string state, int zip, long phoneNumber, string email)
+        public void ListOfContact()
         {
+            if (contactList.Count > 0)
+            {
+                Console.WriteLine("The Contact List : ");
+                foreach (var member in contactList)
+                {
+                    DisplyContact(member);
+                }
 
-            ContactArray[this.i] = new AddressBook(firstName, lastName, Address, city, state, zip, phoneNumber, email);
-            Console.WriteLine("\nFirst name: {0}\nLast name: {1}\nAddress: {2}\nCity: {3}\nZip: {4}\nState: {5}\nPhone Number: {6}\nEmail: {7} \n", ContactArray[i].firstName, ContactArray[i].lastName, ContactArray[i].Address, ContactArray[i].city, ContactArray[i].zip, ContactArray[i].state, ContactArray[i].phoneNumber, ContactArray[i].email);
+            }
+            else
+            {
+
+                Console.WriteLine("Your address book is empty.");
+                return;
+            }
         }
     }
 }
