@@ -5,7 +5,7 @@
         public static void select()
         {
             Console.WriteLine("-------------> WELCOME TO ADDRESS BOOK SYSTEM <------------------------");
-            Console.WriteLine("1: Add Contact\n2: Display Contact\n0: Exit");
+            Console.WriteLine("1: Add Contact\n2: Display Contact\n3: Edit Contact\n0: Exit");
             //Calls by Default constructor
             AddressBook addressBook = new AddressBook();
             Console.WriteLine("Enter your Choice");
@@ -19,6 +19,10 @@
                     break;
                 case 2:
                     addressBook.ListOfContact();
+                    select();
+                    break;
+                case 3:
+                    addressBook.Modify();
                     select();
                     break;
             }
