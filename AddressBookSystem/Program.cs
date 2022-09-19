@@ -5,7 +5,7 @@
         public static void select()
         {
             Console.WriteLine("-------------> WELCOME TO ADDRESS BOOK SYSTEM <------------------------");
-            Console.WriteLine("1: Add Contact\n2: Display Contact\n3: Edit Contact\n4: Delete Contact\n5.Add Multiple Address Book\n0: Exit");
+            Console.WriteLine("1: Add Contact\n2: Display Contact\n3: Edit Contact\n4: Delete Contact\n5.Add Multiple Address Book\n6.Check Duplicate Entry\n0: Exit");
             //Calls by Default constructor
             AddressBook addressBook = new AddressBook();
             Console.WriteLine("Enter your Choice");
@@ -33,6 +33,10 @@
                     MultipleAddressBook multipleAddressBook = new MultipleAddressBook();
                     multipleAddressBook.AddressBookName();
                     addressBook.ListOfContact();
+                    select();
+                    break;
+                case 6:
+                    addressBook.Addressbook();
                     select();
                     break;
             }

@@ -10,7 +10,9 @@ namespace AddressBookSystem
     {
 
         public List<NewContact> contactList = new List<NewContact>();
-        public void Addressbook()
+        private bool found;
+
+        public bool Addressbook()
         {
             NewContact newMember = new NewContact();
             Console.Write("Enter First Name: ");
@@ -27,7 +29,41 @@ namespace AddressBookSystem
             newMember.State = Console.ReadLine();
             Console.Write("Enter Pincode: ");
             newMember.pincode = Console.ReadLine();
-            contactList.Add(newMember);
+            var name = newMember.firstname.ToLower() + newMember.lastname.ToLower();
+            if (contactList.Count == 0)
+            {
+                contactList.Add(newMember);
+            }
+            else
+            {
+
+                var firstname = contactList.Select(x => x.firstname);
+                var lastname = contactList.Select(x => x.lastname);
+                foreach (var members in firstname.Zip(lastname, Tuple.Create))
+                {
+                    if (members.Item1 == newMember.firstname && members.Item2 == newMember.lastname)
+                    {
+                        found = true;
+                        break;
+
+                    }
+
+
+                }
+                if (found)
+                {
+                    Console.WriteLine("Already Exists Cant Add");
+                }
+                else
+                {
+                    contactList.Add(newMember);
+                }
+
+
+            }
+
+            return found;
+        
         }
         public static void DisplyContact(NewContact member)
         {
