@@ -9,7 +9,7 @@ namespace AddressBookSystem
     public class AddressBook
     {
 
-        public static List<NewContact> contactList = new List<NewContact>();
+        public List<NewContact> contactList = new List<NewContact>();
         public void Addressbook()
         {
             NewContact newMember = new NewContact();
