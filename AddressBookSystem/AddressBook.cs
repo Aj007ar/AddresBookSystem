@@ -11,6 +11,7 @@ namespace AddressBookSystem
 
         public List<NewContact> contactList = new List<NewContact>();
         private bool found;
+        private int firstName;
 
         public bool Addressbook()
         {
@@ -63,9 +64,9 @@ namespace AddressBookSystem
             }
 
             return found;
-        
+
         }
-        public static void DisplyContact(NewContact member)
+        public void DisplyContact(NewContact member)
         {
             Console.WriteLine("First Name: " + member.firstname);
             Console.WriteLine("Last Name: " + member.lastname);
@@ -177,6 +178,11 @@ namespace AddressBookSystem
                 Console.WriteLine("Your Address book is empty!");
             }
         }
+        private void DisplyContact(List<NewContact> member)
+        {
+            throw new NotImplementedException();
+        }
+
         public void ListOfContact()
         {
             if (contactList.Count > 0)
@@ -194,6 +200,24 @@ namespace AddressBookSystem
                 Console.WriteLine("Your address book is empty.");
                 return;
             }
+        }
+        public void Search(List<NewContact> list, string cityname, string state)
+        {
+            AddressBook addressbook = new AddressBook();
+            var member = list.FindAll(x => (x.City.ToLower() == cityname || x.State.ToLower() == state));
+            if (member.Count > 0)
+            {
+                foreach (var members in member)
+                {
+                    addressbook.DisplyContact(members);
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("No contacts present");
+            }
+
         }
     }
 }
