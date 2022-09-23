@@ -13,3 +13,5 @@ D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBoo
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\AddressBookSystem.exe
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\AddressBookSystem.runtimeconfig.json
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\obj\Debug\net6.0\AddressBookSystem.genruntimeconfig.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\CsvHelper.dll
+D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\obj\Debug\net6.0\AddressBookSystem.csproj.CopyComplete

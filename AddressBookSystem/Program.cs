@@ -15,7 +15,7 @@
         public static void select()
         {
             Console.WriteLine("-------------> WELCOME TO ADDRESS BOOK SYSTEM <------------------------");
-            Console.WriteLine("1: Add Contact\n2: Display Contact\n3: Edit Contact\n4: Delete Contact\n5.Add Multiple Address Book\n6.Check Duplicate Entry\n7.Search By City on State\n8.IOOpertion\n0: Exit");
+            Console.WriteLine("1: Add Contact\n2: Display Contact\n3: Edit Contact\n4: Delete Contact\n5.Add Multiple Address Book\n6.Check Duplicate Entry\n7.Search By City on State\n8.Sort by city state\n9.IOOpertion\n10.CSV Operation\n0: Exit");
             //Calls by Default constructor
             AddressBook addressBook = new AddressBook();
             Console.WriteLine("Enter your Choice");
@@ -135,6 +135,11 @@
                     break;
                 case 9:IOOperation iOOperation = new IOOperation();
                     iOOperation.GetDictionary(addressbooknames);
+                    select();
+                    break;
+                case 10:
+                    IOOperation iOperation = new IOOperation();
+                    iOperation.CSVOperations(addressbooknames);
                     select();
                     break;
             }
