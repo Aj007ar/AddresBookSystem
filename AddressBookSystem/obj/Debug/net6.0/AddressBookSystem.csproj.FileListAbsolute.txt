@@ -1,6 +1,4 @@
-D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\AddressBookSystem.exe
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\AddressBookSystem.deps.json
-D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\AddressBookSystem.runtimeconfig.json
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\AddressBookSystem.dll
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\AddressBookSystem.pdb
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\obj\Debug\net6.0\AddressBookSystem.csproj.AssemblyReference.cache
@@ -11,5 +9,7 @@ D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBoo
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\obj\Debug\net6.0\AddressBookSystem.dll
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\obj\Debug\net6.0\refint\AddressBookSystem.dll
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\obj\Debug\net6.0\AddressBookSystem.pdb
-D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\obj\Debug\net6.0\AddressBookSystem.genruntimeconfig.cache
 D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\obj\Debug\net6.0\ref\AddressBookSystem.dll
+D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\AddressBookSystem.exe
+D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\bin\Debug\net6.0\AddressBookSystem.runtimeconfig.json
+D:\BL\LinuxBatch-560\LFP-183-DotNet\AdressBookSystem\AddresBookSystem\AddressBookSystem\obj\Debug\net6.0\AddressBookSystem.genruntimeconfig.cache

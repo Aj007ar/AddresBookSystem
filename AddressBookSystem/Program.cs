@@ -2,14 +2,20 @@
 {
     internal class Program
     {
-        private static readonly IEnumerable<KeyValuePair<string, List<NewContact>>> addressbooknames;
-
-        public static object cities { get; private set; }
+        static void Main(string[] args)
+        {
+            select();
+        }
+        public static Dictionary<string, List<NewContact>> addressbooknames = new Dictionary<string, List<NewContact>>();
+        public static Dictionary<string, List<NewContact>> cities = new Dictionary<string, List<NewContact>>();
+        public static Dictionary<string, List<NewContact>> states = new Dictionary<string, List<NewContact>>();
+        public static List<NewContact> cityname;
+        public static List<NewContact> statename;
 
         public static void select()
         {
             Console.WriteLine("-------------> WELCOME TO ADDRESS BOOK SYSTEM <------------------------");
-            Console.WriteLine("1: Add Contact\n2: Display Contact\n3: Edit Contact\n4: Delete Contact\n5.Add Multiple Address Book\n6.Check Duplicate Entry\n7.Search By City on State\n0: Exit");
+            Console.WriteLine("1: Add Contact\n2: Display Contact\n3: Edit Contact\n4: Delete Contact\n5.Add Multiple Address Book\n6.Check Duplicate Entry\n7.Search By City on State\n8.IOOpertion\n0: Exit");
             //Calls by Default constructor
             AddressBook addressBook = new AddressBook();
             Console.WriteLine("Enter your Choice");
@@ -127,10 +133,10 @@
                        
                     }
                     break;
-            }
-            static void Main(string[] args)
-            {
-                select();
+                case 9:IOOperation iOOperation = new IOOperation();
+                    iOOperation.GetDictionary(addressbooknames);
+                    select();
+                    break;
             }
         }
     }
